@@ -10,6 +10,7 @@ import producto_6 from "../images/producto_6.png"
 import producto_7 from "../images/producto_7.png"
 import producto_8 from "../images/producto_8.png"
 
+
 import { AiTwotoneStop } from "react-icons/ai";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
@@ -81,9 +82,10 @@ export const CoffeQuintalito = () => {
                             { activate_frame.activate === true ? 
                                 <button className="absolute top-0 left-0 bg-[#0000009e] flex justify-center items-center w-full h-[86vh] z-[100]" onClick={() => set_activate_frame({ activate: false, index: 0 })}>
                                     <div className="relative bg-[#ffbb02] flex justify-center items-center flex-col h-[70%] w-[50%] rounded-[10px] z-[101]">
+                                        {/* <img src={producto_9} alt="producto-9" className="absolute top-[-50px]" /> */}
                                         <button className="absolute top-[20px] right-[20px]" onClick={() => set_activate_frame({ activate: false, index: 0 })}><IoCloseCircleOutline size={30} /></button>
-                                        <h2 className="m-[40px] text-[40px]">¿Por qué elegirnos?</h2>
-                                        <p className="px-[50px] font-serif text-left text-[17px]">Café de calidad: Seleccionamos los mejores granos de café, con un enfoque en la frescura y el sabor auténtico.
+                                        <h2 className="absolute top-0 m-[40px] text-[40px]">¿Por qué elegirnos?</h2>
+                                        <p className="absolute top-[40%] px-[50px] font-serif text-left text-[17px]">Café de calidad: Seleccionamos los mejores granos de café, con un enfoque en la frescura y el sabor auténtico.
                                         Compromiso con la tradición: En nuestra cafetería, honramos la rica tradición cafetera mexicana, brindando productos que destacan por su sabor único.
                                         Venta directa en grano: Facilitamos la compra de café en su estado más puro para que tú puedas disfrutar de la experiencia del café recién molido, en cualquier lugar y en cualquier momento.
                                         </p>
@@ -165,22 +167,22 @@ export const CoffeQuintalito = () => {
                             </div>
                         </div>
                         <div id='estructura-4' className="flex h-[86vh] flex-row py-[70px] px-[35px]">
-                            <div className="flex flex-row border">
+                            <div className="flex flex-row w-full">
                                 <h2 className="text-[50px] w-[300px] text-left text-[#5f4518]">SIGUENOS EN NUESTRAS REDES SOCIALES</h2>
-                                <div className="relative flex flex-row w-[600px] h-full ">
+                                <div className="relative flex flex-row w-full h-full ">
                                     <div className="absolute top-[50px] left-[30%] space-y-[30px] text-left">
-                                        <p><FaInstagram size={35} /></p>
-                                        <p><FaFacebookSquare size={35} /></p>
-                                        <p><AiFillTikTok size={40} /></p>
-                                        <p><BsFillTelephoneFill size={35} /></p>
-                                        <p><TfiEmail size={35} /></p>
+                                        <p><FaInstagram size={35} color="#5f4518" /></p>
+                                        <p><FaFacebookSquare size={35} color="#5f4518" /></p>
+                                        <p><AiFillTikTok size={40} color="#5f4518" /></p>
+                                        <p><BsFillTelephoneFill size={35} color="#5f4518" /></p>
+                                        <p><TfiEmail size={35} color="#5f4518" /></p>
                                     </div>
-                                    <div className="absolute top-[50px] left-[40%] left-[50px] space-y-[44px] text-left">
-                                        <p>INSTAGRAM</p>
-                                        <p>FACEBOOK</p>
-                                        <p>TIK TOK</p>
-                                        <p>5545355398</p>
-                                        <p>Cafe.quintalito@hotmail.com</p>
+                                    <div className="absolute top-[50px] left-[35%] space-y-[44px] text-left">
+                                        <p className="text-[#5f4518]">INSTAGRAM</p>
+                                        <p className="text-[#5f4518]">FACEBOOK</p>
+                                        <p className="text-[#5f4518]">TIK TOK</p>
+                                        <p className="text-[#5f4518]">5545355398</p>
+                                        <p className="text-[#5f4518]">Cafe.quintalito@hotmail.com</p>
                                     </div>
                                 </div>
                             </div>
